@@ -8,9 +8,10 @@ body {
   position: absolute;
   top:0; right: 0; left: 0; bottom: 0;
   margin: auto;
-  background: url("https://i.pinimg.com/564x/6f/5a/b1/6f5ab1b470beeeeaf285bb451c63ac8f.jpg");
+  background: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fneurosciencenews.com%2Ffiles%2F2017%2F10%2Flucid-dream-control-neurosicnecneews.jpg&f=1&nofb=1");
   background-color: black;
   background-size: cover;
+  background-position: center;
   cursor: pointer;
   -webkit-box-shadow: 0 0 5px #000;
     box-shadow: 0 0 5px #000;
