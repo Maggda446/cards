@@ -11,7 +11,19 @@ body {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-} 
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
 
 .box {
 	margin: 10px;
@@ -27,7 +39,8 @@ body {
 }
 .box:hover {
 	margin-bottom: -10px;
-	
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.7);
+	        box-shadow: 0 0 5px rgba(0,0,0,0.7);
 }
 .box h1 {
 	color: #fff;
@@ -37,13 +50,31 @@ body {
 	font-weight: 100;
 	font-size: 25px;
 	background: rgba(0,0,0,0.8);
-	
+	-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.7);
+	        box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
 
 
-.one {
-	background: url('https://source.unsplash.com/900x920');
+.poster {
+	width: 130px;
+	height:130px;
+	margin: 120px auto;
+	position: relative;
+	border-radius: 100px;
+}
+.poster h4 {
+	top: 16px;
+	color: #fff;
+	position: relative;
+	font-size: 80px;
+	text-align: center;
+	font-weight: 100;
+}
+
+.box {
+	background: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.photoworld.toya.net.pl%2Fantarktyda%2F025.jpg&f=1&nofb=1');
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center;
+    background-position: center;
 }
+
