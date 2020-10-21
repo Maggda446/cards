@@ -1,9 +1,15 @@
-
+  * {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-size: 100%;
+  }
+  
   body {
     padding: 0;
     margin: 0;
-    background: #152536;
-    font-size: 100%;
+    background: #8a8f94;
   }
   
   a[href] {
@@ -12,7 +18,7 @@
   a[href], a[href]:link, a[href]:visited, a[href]:active {
     text-decoration: none;
     color: #d8276c;
-    text-shadow: 2px 2px 2px #070c11;
+    text-shadow: 2px 2px 2px black;
     padding-bottom: 3px;
     font-weight: bold;
   }
@@ -32,6 +38,7 @@
     width: 100%;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
   }
+  
   .note {
     margin-top: 30px;
     color: #fff;
@@ -40,6 +47,7 @@
     line-height: 1.5;
     text-align: center;
   }
+  
   article.card {
     position: absolute;
     left: 50%;
@@ -56,10 +64,9 @@
   article.card .thumb {
     width: auto;
     height: 260px;
-    background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.spiritanimal.info%2Fpictures%2Fcat%2FCat-Spirit-Animal-3.jpg&f=1&nofb=1://s3-us-west-2.amazonaws.com/s.cdpn.io/397014/new-york-city.png") no-repeat center;
+    background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.spiritanimal.info%2Fpictures%2Fcat%2FCat-Spirit-Animal-3.jpg&f=1&nofb=1") no-repeat center;
     background-size: cover;
-    border-radius: 1px;
-    background-position: top;
+    border-radius: 3px;
   }
   article.card .infos {
     width: auto;
@@ -80,25 +87,15 @@
     text-transform: uppercase;
     text-shadow: 0 0 0px #32577f;
   }
-  article.card .infos .flag {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    width: 35px;
-    height: 23px;
-    background-size: 100% auto;
-    display: inline-block;
-  }
-  article.card .infos, article.card .infos  {
+ 
+  article.card .infos, article.card .infos .seats {
     margin-bottom: 10px;
     text-transform: uppercase;
     font-size: .85rem;
     color: rgba(21, 37, 54, 0.7);
     font-family: "Grotesque", sans-serif;
   }
-  
+ 
   article.card .infos .txt {
     font-family: "Merriweather", sans-serif;
     line-height: 2;
@@ -129,6 +126,7 @@
     -webkit-transform: translateY(-260px);
             transform: translateY(-260px);
   }
-  article.card:hover .infos, article.card:hover .infos .txt, article.card:hover .infos .details {
+  article.card:hover .infos , article.card:hover .infos .txt, article.card:hover .infos .details {
     opacity: 1;
   }
+  
